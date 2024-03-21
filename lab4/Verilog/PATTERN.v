@@ -4,15 +4,15 @@
 //   All Right Reserved
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
-//   ICLAB 2023 Fall
-//   Lab04 Exercise		: Siamese Neural Network
+//   ICLAB 2024 Spring
+//   Lab04 Exercise		: Convolutional Neural Network (CNN) - Pattern
 //   Author     		: Jacky (jackyyeh1999@gmail.com)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
 //   File Name   : PATTERN.v
 //   Module Name : PATTERN
-//   Release version : V1.0 (Release Date: 2023-09)
+//   Release version : V1.0 (Release Date: 2024-03-22)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //############################################################################

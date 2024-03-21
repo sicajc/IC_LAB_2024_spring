@@ -1,11 +1,13 @@
 from CNN import CNN
 from CNN_pattern_gen import CNN_pattern_gen
+import random
 
 def main():
+  random.seed(1234)
   PAT_NUM = 10000
   PAT_GEN = False
   DEBUG   = True
-  PAT_TO_DEBUG = 1221
+  PAT_TO_DEBUG = 10
 
   in_file_dir = './lab4/Verilog/input.txt'
   out_file_dir = './lab4/Verilog/output.txt'
