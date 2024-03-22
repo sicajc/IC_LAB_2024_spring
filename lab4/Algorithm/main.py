@@ -7,7 +7,7 @@ def main():
   PAT_NUM = 10000
   PAT_GEN = False
   DEBUG   = True
-  PAT_TO_DEBUG = 10
+  PAT_TO_DEBUG = 1
 
   in_file_dir = './lab4/Verilog/input.txt'
   out_file_dir = './lab4/Verilog/output.txt'

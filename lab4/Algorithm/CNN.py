@@ -40,9 +40,9 @@ def CNN(PAT_NUM,DEBUG,in_file_dir,out_file_dir,debug_log_dir):
 
         hex2_fp_numpy = np.vectorize(fp2hex)
 
-        conv11 = conv(opt%2, img11, ker1)
-        conv12 = conv(opt%2, img12, ker2)
-        conv13 = conv(opt%2, img13, ker3)
+        conv11,pad11 = conv(opt//2, img11, ker1)
+        conv12,pad12 = conv(opt//2, img12, ker2)
+        conv13,pad13 = conv(opt//2, img13, ker3)
 
         fmap1 = conv11 + conv12 + conv13
         pool1 = np.array(
@@ -95,6 +95,7 @@ def CNN(PAT_NUM,DEBUG,in_file_dir,out_file_dir,debug_log_dir):
           ic(hex2_fp_numpy(weight))
 
           print("=================================Intermediate Values================================")
+          ic(pad11,pad12,pad13)
           ic(conv11, conv12, conv13)
 
           # Perform hex2fp function on all the element in conv11

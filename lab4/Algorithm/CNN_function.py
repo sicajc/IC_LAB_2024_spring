@@ -1,5 +1,6 @@
 import struct
 import numpy as np
+from icecream import ic
 
 def fp2hex(float_number):
     hex_value = struct.unpack('<I', struct.pack('<f', float_number))[0]
@@ -111,6 +112,8 @@ def conv(opt_0, img, ker):
     pad[5][4] = 0
     pad[5][5] = 0
 
+  # ic(pad)
+
   rslt = np.random.rand(16).astype(np.float32)
   for i in range(4):
     for j in range(4):
@@ -119,4 +122,4 @@ def conv(opt_0, img, ker):
       tmp3 = ker[6] * pad[i+2][j] + ker[7] * pad[i+2][j+1] + ker[8] * pad[i+2][j+2]
       rslt[i * 4 + j] = tmp1 + tmp2 + tmp3
 
-  return rslt
+  return rslt,pad

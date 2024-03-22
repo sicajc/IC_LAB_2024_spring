@@ -22,7 +22,7 @@ def CNN_pattern_gen(NUM,file_dir):
         if i == 0:
           tmp = 1
         elif i == 1:
-          tmp = -1
+          tmp = 1
         else:
           tmp = random.uniform(0.5, 255.0) * random.choice([1, -1])
         tmh = fp2hex(tmp)
@@ -36,7 +36,7 @@ def CNN_pattern_gen(NUM,file_dir):
         if i == 0:
           tmp = 1
         elif i == 1:
-          tmp = -1
+          tmp = 2
         else:
           tmp = random.uniform(0.5, 255.0) * random.choice([1, -1])
         tmh = fp2hex(tmp)
